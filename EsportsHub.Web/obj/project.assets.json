@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "EsportsHub.API/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/EsportsHub.API.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EsportsHub.API.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "EsportsHub.API/1.0.0": {
+      "type": "project",
+      "path": "../EsportsHub.API/EsportsHub.API.csproj",
+      "msbuildProject": "../EsportsHub.API/EsportsHub.API.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "EsportsHub.API >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Brandon\\.nuget\\packages\\": {},
@@ -36,7 +58,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Brandon\\source\\repos\\EsportsHub\\EsportsHub.API\\EsportsHub.API.csproj": {
+              "projectPath": "C:\\Users\\Brandon\\source\\repos\\EsportsHub\\EsportsHub.API\\EsportsHub.API.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
