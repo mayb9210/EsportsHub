@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "angular.js@1.7.8",
+      "destination": "wwwroot/lib/angular.js/",
+      "files": [
+        "angular.min.js",
+        "angular-sanitize.min.js",
+        "angular-cookies.min.js",
+        "angular-animate.min.js"
+      ]
+    }
+  ]
+}

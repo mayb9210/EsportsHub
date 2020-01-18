@@ -15,6 +15,8 @@ namespace EsportsHub.API
 {
     public class Startup
     {
+        private readonly string corsPolicy = "myCors";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +28,18 @@ namespace EsportsHub.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddHttpClient(Constants.ApiService.name, p =>
+            {
+                p.BaseAddress = new Uri(Constants.ApiService.uri);
+                p.DefaultRequestHeaders.Add("Authorization", "Bearer " + Constants.ApiService.token);
+            });
+            services.AddCors(options =>
+            {
+                options.AddPolicy(corsPolicy, builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,12 +50,10 @@ namespace EsportsHub.API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
-
+            app.UseCors(corsPolicy);
+            app.UseHttpsRedirection();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

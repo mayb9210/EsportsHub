@@ -14,17 +14,14 @@ namespace EsportsHub.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IHttpClientFactory _clientFactory;
 
-        public HomeController(ILogger<HomeController> logger, IHttpClientFactory clientFactory)
+        public HomeController(ILogger<HomeController> logger)
         {
-            _clientFactory = clientFactory;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            
             return View();
         }
 
