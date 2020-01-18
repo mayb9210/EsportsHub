@@ -111,3 +111,5 @@ C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\bin\Debug\netcoreapp3.1\
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Games.cshtml.g.cs
+C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\Razor\Views\Games\LeagueOfLegends\Index.cshtml.g.cs

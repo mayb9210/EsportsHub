@@ -25,6 +25,11 @@ namespace EsportsHub.Web.Controllers
             return View();
         }
 
+        public IActionResult Games()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
