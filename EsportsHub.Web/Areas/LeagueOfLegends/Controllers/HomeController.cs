@@ -4,9 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EsportsHub.Web.Controllers.Fantasy
+namespace EsportsHub.Web.Areas.Stats.Controllers
 {
-    public class LeagueOfLegendsController : Controller
+    [Area("LeagueOfLegends")]
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {

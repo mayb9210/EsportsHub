@@ -17,7 +17,7 @@ namespace EsportsHub.API.Controllers.LeagueOfLegends
         private readonly ILogger<ChampionsController> _logger;
         private readonly HttpClient _client;
 
-        private readonly string route = "champions";
+        private readonly string route = "series";
 
         public ChampionsController(ILogger<ChampionsController> logger, IHttpClientFactory clientFactory)
         {

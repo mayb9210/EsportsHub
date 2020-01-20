@@ -6,24 +6,3 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-
-<div ng-app="myApp">
-    <div ng-controller="myCtrl">
-
-    </div>
-</div>
-
-<script>
-    var app = angular.module('myApp', []);
-    
-    app.controller('myCtrl', function ($scope, $http) {
-        $http({
-            method: 'GET',
-            url: 'https://localhost:44395/api/lol/champions'
-        })
-            .then(function (data) {
-                console.log(data);
-            });
-    });
-
-</script>

@@ -16,8 +16,6 @@ C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\bin\Debug\netcoreapp3.1\
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\EsportsHub.Web.csprojAssemblyReference.cache
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\staticwebassets\EsportsHub.Web.StaticWebAssets.Manifest.cache
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\staticwebassets\EsportsHub.Web.StaticWebAssets.xml
-C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\EsportsHub.Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\EsportsHub.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\EsportsHub.Web.RazorAssemblyInfo.cache
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\EsportsHub.Web.RazorAssemblyInfo.cs
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\EsportsHub.Web.AssemblyInfoInputs.cache
@@ -111,5 +109,6 @@ C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\bin\Debug\netcoreapp3.1\
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Games.cshtml.g.cs
-C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\Razor\Views\Games\LeagueOfLegends\Index.cshtml.g.cs
+C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\EsportsHub.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\EsportsHub.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Brandon\source\repos\EsportsHub\EsportsHub.Web\obj\Debug\netcoreapp3.1\Razor\Areas\LeagueOfLegends\Views\Home\Index.cshtml.g.cs

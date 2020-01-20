@@ -8,6 +8,10 @@
     <ProjectReference Include="..\EsportsHub.API\EsportsHub.API.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
 
 
 </Project>

@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+    Layout = "_Layout";
+}
+
+    <ul>
+        <li><a class="nav-link text-dark" asp-area="LeagueOfLegends" asp-controller="" asp-action="">Stats</a></li>
+        <li><a class="nav-link text-dark" asp-area="LeagueOfLegends" asp-controller="" asp-action="">Fantasy</a></li>
+    </ul>
+
+<script>
+    $(document).ready(function () {
+        $('#homeTable').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: {
+                url: "https://localhost:44395/api/lol/series",
+                type: "GET",
+                dataSrc: function (json) {
+                    return JSON.parse(json.data);
+                },
+                success: function (data) {
+                    console.log(data);
+                },
+            },
+            columns: [
+                { data: "league.id" },
+                { data: "league.name" },
+                { data: "league.image_url" },
+                { data: "league.url" }
+            ]
+        });
+    });
+
+    app.controller('myCtrl', function ($scope, $http) {
+
+    });
+</script>
