@@ -13,5 +13,15 @@ namespace EsportsHub.Web.Areas.LeagueOfLegends.Controllers
         {
             return View();
         }
+
+        public IActionResult Player()
+        {
+            return View();
+        }
+
+        public IActionResult Team()
+        {
+            return View();
+        }
     }
 }

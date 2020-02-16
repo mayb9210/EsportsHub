@@ -16,7 +16,7 @@ namespace EsportsHub.API
 
         public static class LeagueOfLegends
         {
-            public const string route = "lol";
+            public const string route = "lol/";
         }
 
         public static class Use

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Player";
+    Layout = "_Layout";
+}
+
+<div ng-controller="playerCtrl">
+
+</div>
+
+<script>
+    app.controller('playerCtrl', function ($scope, $http) {
+        $http({
+            method: 'GET',
+            url: apiUrl + 'lol/tournaments/players/GetTournamentPlayers?id=2378'
+        })
+            .then(function (resp) {
+                console.log(resp);
+            });
+    });
+</script>

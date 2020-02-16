@@ -27,7 +27,7 @@ namespace EsportsHub.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers(options => options.SuppressAsyncSuffixInActionNames = false);
             services.AddHttpClient(Constants.ApiService.name, p =>
             {
                 p.BaseAddress = new Uri(Constants.ApiService.uri);
@@ -57,6 +57,8 @@ namespace EsportsHub.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+
+                //endpoints.MapControllerRoute("lol", "lol/{controller}/{action}/{id?}");
             });
         }
     }
