@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <div ng-controller="myCtrl"></div>
-<table id="homeTable">
+<table id="homeTable" class="display">
     <thead>
         <tr>
             <th>Image</th>
@@ -29,39 +29,20 @@
         //});
     });
     $(document).ready(function () {
-        $.ajax({
-            url: "https://localhost:44395/api/lol/Tournaments/GetPlayers?id=2378",
-            type: "GET",
-            dataSrc: function (json) {
-                //var jsonData = JSON.parse(json.data);
-                return json.data;
+        $('#homeTable').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: {
+                url: "https://localhost:44395/api/lol/Tournaments/GetPlayers?id=2378",
+                type: "GET",
+                dataSrc: function (json) {
+                    return JSON.parse(json.data);
+                }
             },
-            success: function (json) {
-                console.log(json);
-                var jsonData = JSON.parse(json.data);
-                $('#homeTable').DataTable({
-                    //processing: true,
-                    //serverSide: true,
-                    //ajax: {
-                    //    url: "https://localhost:44395/api/lol/Tournaments/GetPlayers?id=2378",
-                    //    type: "GET",
-                    //    dataSrc: function (json) {
-                    //        //var jsonData = JSON.parse(json.data);
-                    //        return json.data;
-                    //    },
-                    //    success: function (json) {
-                    //        console.log(json);
-                    //    },
-                    //},
-                    data: jsonData,
-                    columns: [
-                        //{ data: "image_url", render: function (d) { return "<img src=\"" + d.image_url + "\" />" } },
-                        //{ data: "name", render: "<a asp-area=\"LeagueOfLegends\" asp-controller=\"Stats\" asp-action=\"Player\"" }
-                        { data: "image_url" },
-                        { data: "name" }
-                    ]
-                });
-            },
+            columns: [
+                { data: "image_url", render: function (d) { return "<img src=\"" + d + "\" style=\"width: 63; height: 50px;\" />" } },
+                { data: "name" }
+            ]
         });
         
         
